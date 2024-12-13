@@ -18,7 +18,7 @@
         "framework": "TFLITE",
         "optimization_ifx": "SIZE",
         "optimization_tflm": false,
-        "path": "Edge/IMU/human_activity.h5",
+        "path": "Edge/IMU/conv1d-medium-balanced-1.h5",
         "quantization": {
             "float32": true,
             "int16x16": false,

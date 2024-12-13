@@ -246,8 +246,29 @@ static const IMAI_PDM_stats IMAI_PDM_validation_stats[] = IMAI_PDM_VALIDATION_ST
 #define IMAI_PDM_RET_NOMEM -2
 
 // Exported methods
+
+
+#ifdef __cplusplus
+
+
+extern "C" {
+
+
+#endif
+
+
+#define restrict __restrict__
+
 int IMAI_PDM_dequeue(float *restrict data_out);
 int IMAI_PDM_enqueue(const float *restrict data_in);
 void IMAI_PDM_init(void);
+
+#ifdef __cplusplus
+
+
+}
+
+
+#endif
 
 #endif /* _IMAI_PDM_PDM_MODEL_H_ */
